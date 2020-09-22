@@ -10,13 +10,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="styles.css" media="screen">
-    <title>Comparison</title>
+    <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
+    <title>Max Temperature</title>
   </head>
 
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" href="index.html" id="logo">Latitude</a>
+      <a class="navbar-brand" href="../index.html" id="logo">Latitude</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,57 +38,47 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="comparison.html">Comparison</span></a>
+            <a class="nav-link" href="../comparison.html">Comparison</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
+            <a class="nav-link" href="../data.html">Data</a>
           </li>
         </ul>
 
       </div>
     </nav>
 
-    <div style="clear: both;">&nbsp;</div>
-
-    <!-- Start of container -->
     <div class="container">
       <div class="row">
-        <div class="col-md-12">
-          <h1 class="description-header">Comparison: Latitude vs X</h1>
-          <hr class="description-hr" />
-          <p class="description-text">Click any plot to get an in-depth analysis.</p>
-        </div>
-      </div>
+        <div class="col-md-8">
+          <h1 class="description-header">Max Temperature</h1>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h2 class="comparison-header">vs. Max Temperature</h2>
-          <a href="temp.html"><img src="Fig1.png" alt="Latitude vs. Max Temperature"
-              class="mw-100"></a>
-          <hr class="visible-xs visible-sm">
+          <img src="../assets/images/Fig1.png" alt="" class="img-fluid" />
+          <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More
+            interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than
+            the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was
+            gathered.</p>
         </div>
 
-        <div class="col-md-6">
-          <h2 class="comparison-header">vs. Humidity</h2>
-          <a href="humidity.html"><img src="Fig2.png" alt="Latitude vs. Humidity"
-              class="mw-100"></a>
-          <hr class="visible-xs visible-sm">
-        </div>
-      </div>
-
-      <div class="row justify-content-between">
-        <div class="col-md-6">
-          <h2 class="comparison-header">vs. Cloudiness</h2>
-          <a href="cloudiness.html"><img src="Fig3.png" alt="Latitude vs. Cloudiness"
-              class="mw-100"></a>
-          <hr class="visible-xs visible-sm">
-        </div>
-
-        <div class="col-md-6">
-          <h2 class="comparison-header">vs. Wind Speed</h2>
-          <a href="wind.html"><img src="Fig4.png" alt="Latitude vs. Wind Speed"
-              class="mw-100"></a>
-          <hr class="visible-xs visible-sm">
+        <div class="col-md-4">
+            <h1 class="description-header">Visualizations</h1>
+            <div class="table-responsive">
+              <table class="table">
+                <tr>
+                  <td>Latitude vs. Max Temperature<a href="temp.html"><img src="../assets/images/Fig1.png" alt=""
+                        class="imageNav-photo"></a></td>
+                  <td>Latitude vs. Humidity<a href="humidity.html"><img src="../assets/images/Fig2.png" alt=""
+                        class="imageNav-photo"></a></td>
+                </tr>
+                <tr>
+                  <td>Latitude vs. Cloudiness<a href="cloudiness.html"><img src="../assets/images/Fig3.png" alt=""
+                        class="imageNav-photo"></a>
+                  </td>
+                  <td>Latitude vs. Wind Speed<a href="wind.html"><img src="../assets/images/Fig4.png" alt=""
+                        class="imageNav-photo"></a></td>
+                </tr>
+              </table>
+            </div>
         </div>
       </div>
     </div>
